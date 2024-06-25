@@ -123,18 +123,42 @@
 
 // x.value = 20;
 
-let number = 10;
-function increase(number) {
-  number++;
-}
-increase(number); // this number parameter is different from the variavle number
-console.log(number);
+// let number = 10;
+// function increase(number) {
+//   number++;
+// }
+// increase(number); // this number parameter is different from the variavle number
+// console.log(number);
 
-// see the difference
+// // see the difference
 
-let obj = { value: 10 };
-function increase(obj) {
-  obj.value++;
-}
-increase(obj);
-console.log(obj);
+// let obj = { value: 10 };
+// function increase(obj) {
+//   obj.value++;
+// }
+// increase(obj);
+// console.log(obj);
+
+// Cloning an object &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+const circle = {
+  radius: 1,
+  draw() {
+    console.log("draw");
+  },
+};
+
+// Old way
+// const another = {};
+// for (let key in circle) another[key] = circle[key];
+// // another["radius"] = circle["radius"];
+// console.log(another);
+
+// New way
+// const another = Object.assign({}, circle);
+// console.log(another);
+
+//Another way
+const another = { ...circle };
+console.log(another);
+
+// ****note the out are all same
