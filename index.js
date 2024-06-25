@@ -54,9 +54,48 @@
 
 // //Dynamic nature of objects ***********************************
 
-const circle = {
-  radius: 1,
-};
+// const circle = {
+//   radius: 1,
+// };
 
-circle.color = "Yellow";
-circle.draw = function () {};
+// circle.color = "Yellow";
+// circle.draw = function () {};
+
+// delete circle.color;
+// delete circle.draw;
+
+// console.log(circle);
+
+// *****************Constructor Property***********************
+
+// let x = {};
+//let x=new Object()
+// new String(); //'',"",``
+// new Boolean(); // true, false
+// new Number(); // 1,2,3,....
+
+//************Functions Are Objects */
+
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log("draw");
+//   };
+// }
+// Circle.call({}, 1);
+// Circle.apply({}, [1, 2, 3]);
+// const another = new Circle(1);
+
+// circle.name;
+// circle.length;
+// circle.constructor;
+
+// const Circle1 = new Function(
+//   "radius",
+//   `
+//    this.radius = radius;
+//   this.draw = function () {
+//     console.log("draw");
+//   };
+//   `
+// );
