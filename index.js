@@ -99,3 +99,42 @@
 //   };
 //   `
 // );
+// .
+
+// ********Value types vs Reference types*************
+
+//** */ @@Value Types Or Primitive Value types
+
+// 1.Number
+// 2.Boolean
+// 3.undefined
+// 4.null
+//5.string
+//6.symbol
+
+// ****Reference Types
+// 1.Objects
+// 2.arrays
+// 3.function
+
+// 2 primitives
+// let x = { value: 10 };
+// let y = x;
+
+// x.value = 20;
+
+let number = 10;
+function increase(number) {
+  number++;
+}
+increase(number); // this number parameter is different from the variavle number
+console.log(number);
+
+// see the difference
+
+let obj = { value: 10 };
+function increase(obj) {
+  obj.value++;
+}
+increase(obj);
+console.log(obj);
