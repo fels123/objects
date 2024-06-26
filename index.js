@@ -213,12 +213,22 @@
 // message.trim(); //remove whitespace
 
 // *************Template Literal****************
-const name = "john";
-const another = `
-Hi ${name}, 
-This 
-is 
-my
-first 
-message`;
-console.log(another);
+// const name = "john";
+// const another = `
+// Hi ${name},
+// This
+// is
+// my
+// first
+// message`;
+// console.log(another);
+
+//*************Date***************** */
+
+// const now = new Date();
+// const date1 = new Date("May 11 2018 09:00");
+// const date2 = new Date(2018, 4, 11, 9, 0);
+
+// console.log(date1);
+// console.log(date2);
+//now.toISOString() //commonly use method to transfer date between client and server
