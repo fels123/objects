@@ -182,3 +182,43 @@
 // Garbage Collection *************************************
 // let circle = {}; //memory auto alocated and delocated memory when not in use
 // console.log(circle);
+
+//*************************Math ***************************
+//www.math-javascript
+// Math.random(); //get number btween 0 and 1
+// Math.random(1.6)
+// 0.3909507268083634
+// Math.max(1,2,8,9)
+// 9
+
+// *********************string********************
+// more info on javascript string mdn
+
+// const message = "hi";
+// typeof message; // this is string
+//string object
+// const another = new String("hi");
+// // typeof another; // this is object
+
+// const message = "This is my first message";
+// message.length;
+// message[0];
+// message[1];
+// message.includes("not");
+// message.startsWith("This");
+// message.startsWith("this"); //case sensitive
+// message.endsWith("e");
+// message.indexOf("my");
+// message.replace("first", "second");
+// message.trim(); //remove whitespace
+
+// *************Template Literal****************
+const name = "john";
+const another = `
+Hi ${name}, 
+This 
+is 
+my
+first 
+message`;
+console.log(another);
